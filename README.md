@@ -57,6 +57,7 @@ evidencias/
 - Chrome para la versión web.
 - Visual Studio Build Tools para Windows.
 - Xcode para iOS/macOS y Android SDK para Android si se compilan esas plataformas.
+- En Windows, Flutter necesita soporte de symlinks para los plugins. Activa el Modo Desarrollador de Windows o ejecuta la primera vez la terminal como administrador.
 
 ## Cómo ejecutar
 
@@ -65,6 +66,12 @@ flutter pub get
 flutter analyze
 flutter test
 flutter run -d windows
+```
+
+Si aparece el mensaje `Building with plugins requires symlink support` en Windows, activa el Modo Desarrollador con:
+
+```powershell
+start ms-settings:developers
 ```
 
 Si se modifica la tabla hay que regenerar el código de Drift:
