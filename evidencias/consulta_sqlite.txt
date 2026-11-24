@@ -1,0 +1,2 @@
+﻿TABLAS: [('tareas', 'CREATE TABLE "tareas" ("id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "titulo" TEXT NOT NULL, "completada" INTEGER NOT NULL DEFAULT 0 CHECK ("completada" IN (0, 1)))'), ('sqlite_sequence', 'CREATE TABLE sqlite_sequence(name,seq)')]
+TAREAS: [(1, 'Comprar material', 1), (2, 'Estudiar SQLite y Drift', 0)]
